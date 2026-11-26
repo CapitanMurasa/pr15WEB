@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop</title>
+  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body class="bg-light">
+  <header class="bg-white border-bottom">
+    <div class="container py-3">
+      <h1 class="h4 mb-0">Shop</h1>
+    </div>
+  </header>
+
+  <main class="container my-4">
+    <div class="row">
+      <section class="col-lg-8" aria-labelledby="catalog-title">
+        <h2 id="catalog-title" class="h4 mb-3">Комплектуючі для ПК</h2>
+        <div class="row">
+          <div class="col-sm-6 mb-3">
+            <article class="card h-100 product" data-price="5300">
+              <img class="card-img-top product-photo" src="img/parts/cpu.jpg" alt="AMD Ryzen 5 5600X">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h6 product-name">AMD Ryzen 5 5600X</h3>
+                <p class="small text-muted mb-2">6 ядер, AM4</p>
+                <p class="font-weight-bold mb-2">5 300 грн</p>
+                <div class="d-flex justify-content-between align-items-center flex-wrap mt-auto product-actions">
+                  <div class="btn-group btn-group-sm" role="group" aria-label="Кількість AMD Ryzen 5 5600X">
+                    <button class="btn btn-outline-secondary" type="button" data-action="minus" aria-label="Зменшити кількість" disabled>−</button>
+                    <output class="quantity" data-counter>1</output>
+                    <button class="btn btn-outline-secondary" type="button" data-action="plus" aria-label="Збільшити кількість">+</button>
+                  </div>
+                  <button class="btn btn-primary btn-sm" type="button" data-add>У кошик</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 mb-3">
+            <article class="card h-100 product" data-price="460">
+              <img class="card-img-top product-photo" src="img/parts/ram.jpg" alt="Модуль пам’яті Crucial Ballistix Sport">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h6 product-name">Crucial Ballistix Sport</h3>
+                <p class="small text-muted mb-2">DDR4-2400, DIMM</p>
+                <p class="font-weight-bold mb-2">460 грн</p>
+                <div class="d-flex justify-content-between align-items-center flex-wrap mt-auto product-actions">
+                  <div class="btn-group btn-group-sm" role="group" aria-label="Кількість Crucial Ballistix Sport">
+                    <button class="btn btn-outline-secondary" type="button" data-action="minus" aria-label="Зменшити кількість" disabled>−</button>
+                    <output class="quantity" data-counter>1</output>
+                    <button class="btn btn-outline-secondary" type="button" data-action="plus" aria-label="Збільшити кількість">+</button>
+                  </div>
+                  <button class="btn btn-primary btn-sm" type="button" data-add>У кошик</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 mb-3">
+            <article class="card h-100 product" data-price="1450">
+              <img class="card-img-top product-photo" src="img/parts/ssd.jpg" alt="SSD Samsung 970 EVO Plus">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h6 product-name">Samsung 970 EVO Plus</h3>
+                <p class="small text-muted mb-2">250 ГБ, M.2 NVMe</p>
+                <p class="font-weight-bold mb-2">1 450 грн</p>
+                <div class="d-flex justify-content-between align-items-center flex-wrap mt-auto product-actions">
+                  <div class="btn-group btn-group-sm" role="group" aria-label="Кількість Samsung 970 EVO Plus">
+                    <button class="btn btn-outline-secondary" type="button" data-action="minus" aria-label="Зменшити кількість" disabled>−</button>
+                    <output class="quantity" data-counter>1</output>
+                    <button class="btn btn-outline-secondary" type="button" data-action="plus" aria-label="Збільшити кількість">+</button>
+                  </div>
+                  <button class="btn btn-primary btn-sm" type="button" data-add>У кошик</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 mb-3">
+            <article class="card h-100 product" data-price="11400">
+              <img class="card-img-top product-photo" src="img/parts/gpu.jpg" alt="Відеокарта ZOTAC GeForce RTX 3060">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h6 product-name">ZOTAC GeForce RTX 3060</h3>
+                <p class="small text-muted mb-2">12 ГБ GDDR6</p>
+                <p class="font-weight-bold mb-2">11 400 грн</p>
+                <div class="d-flex justify-content-between align-items-center flex-wrap mt-auto product-actions">
+                  <div class="btn-group btn-group-sm" role="group" aria-label="Кількість ZOTAC GeForce RTX 3060">
+                    <button class="btn btn-outline-secondary" type="button" data-action="minus" aria-label="Зменшити кількість" disabled>−</button>
+                    <output class="quantity" data-counter>1</output>
+                    <button class="btn btn-outline-secondary" type="button" data-action="plus" aria-label="Збільшити кількість">+</button>
+                  </div>
+                  <button class="btn btn-primary btn-sm" type="button" data-add>У кошик</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <aside class="col-lg-4" aria-labelledby="cart-title">
+        <h2 id="cart-title" class="h4 mb-3" tabindex="-1">Кошик</h2>
+        <div class="card">
+          <div class="card-body">
+            <p id="empty-cart" class="text-muted mb-2">Кошик порожній.</p>
+            <ul id="cart-items" class="list-unstyled mb-0"></ul>
+            <p class="border-top pt-2 mb-0">Разом <strong id="total" class="float-right" aria-live="polite">0 грн</strong></p>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+  </main>
+</body>
+</html>
